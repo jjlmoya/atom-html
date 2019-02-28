@@ -6,12 +6,14 @@
                 modifier="l-column--1-1"
         }}
     </div>
-    <div class="ml-card-author__description a-pad">
-        {{> atoms/title/link
-                title=name
-                link="#"
-                modifier="a-text--bold a-text--s a-text--link"
-        }}
+    <div class="ml-card-author__description a-pad a-border--primary">
+        <h3>
+            {{> atoms/title/link
+                    title=name
+                    link="#"
+                    modifier="a-text--bold a-text--s a-text--link a-text--brand"
+            }}
+        </h3>
         {{> atoms/paragraph/simple
                 text=career
                 modifier="a-text--bold"
