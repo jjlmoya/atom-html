@@ -1,10 +1,16 @@
-<section class="og-slider og-slider--articles l-flex l-flex--direction-column a-bg--image a-bg--image--technology">
+<style>
+    .og-slider--articles::after {
+        background-image: url('https://auspostenterprise.com.au/content/dam/corp/ent-gov/insights/digitising-services/how-regulation-and-technology.jpg.auspostimage.3200*0.low.jpg');
+    }
+</style>
+<section class="og-slider og-slider--articles l-flex l-flex--direction-column a-bg--image">
+
     {{> atoms/title/h2
             title="Ayudamos a las marcas a mejorar su rendimiento online"
             color="secondary"
             modifier="a-mar-40 og-slider--articles__text"
     }}
-    <hr class="a-separator a-separator--rainbow a-separator--animate l-column--1-2">
+    <hr class="a-separator a-separator--light a-separator--animate l-column--1-2">
     <div class="ml-block-articles-minimalist l-flex l-flex--justify-center a-pad--y-20">
         {{> atoms/title/h3
                 title="Los 10 Patrones adaptados a Javascript"
