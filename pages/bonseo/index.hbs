@@ -1,4 +1,4 @@
-{{> organisms/header/og-logo-inline}}
+{{> organisms/header/og-logo-inline modifier="bs_viewport"}}
 <div class="og-slider-product-curved a-bg a-bg--gradient--light l-column--1-1 l-position a-mar--y--bottom u-shadow--bottom">
     {{> atoms/image/normal
             pictureClass="l-column--1-1"
@@ -16,15 +16,17 @@
     }}
 </div>
 <!-- {{> organisms/slider/articles}} -->
-{{> organisms/block/samples}}
-{{> organisms/banner/arrow}}
-{{> organisms/block/testimony}}
-{{> organisms/banner/basic}}
-{{> organisms/block/authors}}
-{{> organisms/banner/data}}
-{{> organisms/articles/zig-zag}}
-{{> organisms/block/contact}}
-{{> organisms/articles/slim}}
+{{> organisms/block/samples }}
+{{> organisms/banner/arrow }}
+{{> organisms/block/testimony
+        modifier="a-mi a-mi--left bs_viewport"
+}}
+{{> organisms/banner/basic modifier="a-mi a-mi--right bs_viewport"}}
+{{> organisms/block/authors modifier="a-mi a-mi--left bs_viewport"}}
+{{> organisms/banner/data modifier="a-mi a-mi--right bs_viewport"}}
+{{> organisms/articles/zig-zag modifier="" dataset=(arr "[1, 3, 4]")}}
+{{> organisms/block/contact modifier="a-mi a-mi--right bs_viewport"}}
+{{> organisms/articles/slim modifier="a-mi a-mi--left bs_viewport"}}
 
 
 <section class="og-block-ceo"></section>
