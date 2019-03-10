@@ -1,6 +1,5 @@
-hola {{dataset}}
-{{#each dataset}}{{name}}{{value}}{{/each}}
-<section class="og-articles-zigzag a-pad-20 {{modifier}}" {{#each dataset}} data-{{name}}="{{value}}"{{/each}}>
+
+<section class="og-articles-zigzag a-pad-20 {{modifier}}">
     {{> atoms/title/h2
             title="Últimos Artículos"
             modifier="a-text--center a-text--bold a-pad"
@@ -21,7 +20,7 @@ hola {{dataset}}
          y un mozo de campo y plaza,
          que así ensillaba el rocín como tomaba la podadera."
             cta="Leer Más"
-            modifier="is-reverse a-mi a-mi--right bs_viewport"
+            modifier="is-reverse"
     }}
     {{> molecules/article/extract
             title="Nuestros clientes te dan las bienvenida"
