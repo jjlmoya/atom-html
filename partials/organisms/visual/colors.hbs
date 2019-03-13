@@ -1,0 +1,19 @@
+<section class="og-visual-colors l-flex l-flex--direction-column {{brand}} a-pad">
+    <div class="og-visual-colors__container l-flex a-mar-auto l-flex--justify-center l-column--1-1">
+        {{> molecules/visual/color color="a-bg"}}
+        {{> molecules/visual/color color="a-bg--light"}}
+        {{> molecules/visual/color color="a-bg--dark"}}
+        {{> molecules/visual/color color="a-bg--secondary"}}
+        {{> molecules/visual/color color="a-bg--secondary--dark"}}
+        {{> molecules/visual/color color="a-bg--secondary--light"}}
+    </div>
+    <div class="og-visual-colors__badge l-column--1-1 a-pad--top">
+        {{> atoms/image/normal
+                pictureClass="og-visual-colors__image l-column--1-1 a-text--center"
+                modifier=" "
+                src="/images/bonseo/logo.png"}}
+    </div>
+    <div class="og-visual-colors__title l-column--1-1 a-mar-auto u-shadow--bottom">
+        {{> atoms/title/h2 title=brand modifier="a-text--center a-text--shadow a-text--uppercase"}}
+    </div>
+</section>
