@@ -1,1 +1,21 @@
-{{#log this}}{{/log}}
+{{> atoms/title/h1 title="Índice" modifier="a-text a-text--brand"}}
+<div class="l-flex a-pad l-flex--wrap">
+    {{#each router}}
+        <div class="l-column--1-2 a-pad u-shadow--bottom {{this.brand}}">
+            <div>
+                {{> atoms/title/link
+                        link=this.path
+                        title=this.name
+                        modifier="a-text a-text--xl a-text--brand a-pad--y"}}
+            </div>
+            {{#each pages}}
+                <div>
+                    {{> atoms/title/link
+                            link=this.path
+                            title=this.name
+                    }}
+                </div>
+            {{/each}}
+        </div>
+    {{/each}}
+</div>
