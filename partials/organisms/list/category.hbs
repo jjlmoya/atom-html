@@ -1,0 +1,33 @@
+<div class="og-list-category l-flex l-flex--direction-column a-mar {{modifier}}">
+    <div class="og-list-category__title l-flex">
+        {{> atoms/title/link
+                src="#"
+                title="Tomate"
+                modifier="bs_viewport a-mi a-mi--left a-pad a-text--center og-list-category__title__text a-bg--dark a-text--secondary"}}
+    </div>
+    <div class="og-list-category__row l-flex">
+        {{> atoms/image/normal
+                pictureClass="og-list-category__row__picture "
+                modifier="l-column--1-1 a-image--cover bs_viewport a-mi a-mi--zoom a-mi--zoom--out"
+                src="https://lh4.googleusercontent.com/-Q3xtg2x3sOE/AAAAAAAAAAI/AAAAAAAAAA8/S8KiFM0mUw8/photo.jpg"}}
+        <div class="og-list-category__row__content a-bg--mono-1 a-pad-40">
+            {{> atoms/title/h3 title="¿Cual es tu variedad favorita?" modifier="a-text--brand--secondary l-column--1-1"}}
+            {{> atoms/paragraph/simple
+                    text="Un breve extracto del artículo aquí"
+                    modifier="a-pad"
+            }}
+            <nav class="og-list-category__row__content__navigation
+                        l-flex l-flex--justify-center l-flex--wrap l-column--1-1">
+                {{#times 3}}
+                    <a href="#" class="a-pad u-pointer">
+                        {{> atoms/image/avatar
+                                src="https://res.cloudinary.com/teepublic/image/private/s--nJGOINFQ--/t_Preview/b_rgb:ffffff,c_limit,f_jpg,h_630,q_90,w_630/v1520790301/production/designs/2457160_0.jpg"
+                                pictureClass="a-pad "
+                                modifier="a-image--avatar--xl u-shadow u-shadow--bottom a-border a-border--fat a-border--light"
+                        }}
+                    </a>
+                {{/times}}
+            </nav>
+        </div>
+    </div>
+</div>
