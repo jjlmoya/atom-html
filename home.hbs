@@ -11,7 +11,7 @@
             {{#each pages}}
                 <div>
                     {{> atoms/title/link
-                            link=this.path
+                            link=(concat ../this.path this.path)
                             title=this.name
                     }}
                 </div>
