@@ -1,0 +1,47 @@
+<div class="og-popup-exit-intent og-popup-exit-intent__trigger__close bs_state
+           bs_exit_intent a-mi a-mi--left
+            l-position--absolute l-position--absolute--center u-layer-3"
+     data-popup="og-popup-exit-intent"
+     data-modifier="is-active"
+     data-exit-delay="300"
+     data-every="1"
+     data-close="og-popup-exit-intent__trigger__close">
+    <!--<img class="bs_exit_intent a-mi a-mi-bounce a-mi-bounce--delayed"
+         src="https://bayecotarium.org/wp-content/uploads/wave-banner-new-desktop-001.png"
+         style="bottom: 10vh; left:10vw; position: absolute; z-index: 4;  width:80vw;">-->
+    <div class="og-popup-exit-intent__content
+                l-position--absolute l-position--absolute--center
+                l-flex l-flex--align-center l-flex--justify-center l-flex--direction-column
+                a-border a-border--primary a-border--fat a-bg--gradient--mono-light
+                bs_exit_intent a-mi a-mi-bounce a-mi-bounce--delayed">
+
+        {{> atoms/title/h2
+                title="¡No te vayas sin <span class='a-text--bold'>guardar tu presupuesto</strong>!"
+                modifier="a-text--brand--secondary a-text--xl a-text--light a-text--center a-text--uppercase a-pad-20"
+        }}
+        {{> atoms/paragraph/simple
+                text="Si guardas tus presupuesto podrás acceder a las siguientes ventajas: "
+                modifier="a-text a-text--center"
+        }}
+        <div class="og-popup-exit-intent__content__checks
+                    l-flex--direction-column l-flex l-flex--wrap l-flex--justify-center l-flex--align-start
+                    a-pad-20">
+            {{> molecules/check/text
+                    text="Recuperarlo más tarde y enviarlo por email"
+                    modifier="a-pad a-text--s a-text--brand--primary  a-text--light l-column--1-1"}}
+            {{> molecules/check/text
+                    text="Recibir ofertas exclusivas y personalizadas"
+                    modifier="a-pad a-text--s a-text--brand--primary a-text--light l-column--1-1"}}
+            {{> molecules/check/text
+                    text="Nuestros agentes podrán darte alternivas según tus preferencias"
+                    modifier="a-pad a-text--s a-text--brand--primary a-text--light l-column--1-1"}}
+        </div>
+        {{> atoms/button/rounded cta="Guardar Presupuesto"
+                modifier="a-mi-pulse a-button--secondary a-text--uppercase a-button--xl a-text--bold a-mar-20"}}
+
+
+    </div>
+    <div class="og-popup-exit-intent__close og-popup-exit-intent__trigger__close a-text a-text--secondary u-pointer">
+        X
+    </div>
+</div>
