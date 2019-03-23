@@ -1,23 +1,39 @@
-<footer class="og-footer-classic a-bg l-flex l-flex--wrap a-pad">
+<footer class="og-footer-classic a-bg l-flex l-flex--wrap a-pad u-shadow--top">
     <div class="og-footer-classic__about {{columnModifier}}">
         {{> atoms/title/h2 title="Sobre Nosotros" modifier="a-text--secondary a-text--m"}}
+        <nav class="a-text l-flex l-flex--direction-column">
+            {{> atoms/title/link title="Contacto" modifier=linkModifier }}
+            {{> atoms/paragraph/simple
+                    modifier="a-text--secondary a-text--s"
+                    text="Dirección: Carrer Na Llobera,  Vilafranca de Bonany,
+                        Mallorca, Islas Baleares, 07250"}}
 
+        </nav>
+    </div>
     </div>
     <div class="og-footer-classic__services {{columnModifier}}">
-        {{> atoms/title/link title="Servicios" modifier=(concat linkModifier " a-text a-text--secondary a-text--m a-pad--bottom ") }}
+        {{> atoms/title/link title="Servicios" modifier=" a-pad--right a-text--link--secondary a-text a-text--secondary a-text--m a-pad--bottom" }}
         <nav class="a-text l-flex l-flex--direction-column">
-            {{> atoms/title/link title="Cursos" modifier=(concat linkModifier " a-text--s a-text--secondary a-pad--right")}}
-            {{> atoms/title/link title="SEO" modifier=(concat linkModifier " a-text--s a-text--secondary a-pad--right")}}
-            {{> atoms/title/link title="Aprende" modifier=(concat linkModifier " a-text--s a-text--secondary a-pad--right")}}
-            {{> atoms/title/link title="Optimización" modifier=(concat linkModifier " a-text--s a-text--secondary a-pad--right")}}
+            {{> atoms/title/link title="Cursos" modifier=linkModifier}}
+            {{> atoms/title/link title="SEO" modifier=linkModifier}}
+            {{> atoms/title/link title="Aprende" modifier=linkModifier}}
+            {{> atoms/title/link title="Optimización" modifier=linkModifier}}
         </nav>
     </div>
     <div class="og-footer-classic__others {{columnModifier}}">
         {{> atoms/title/h2 title="Otros" modifier="a-text--secondary a-text--m  a-pad--bottom"}}
+        <nav class="a-text l-flex l-flex--direction-column">
+            {{> atoms/title/link title="Política de Cookies" modifier=linkModifier}}
+            {{> atoms/title/link title="Política de Privacidad" modifier=linkModifier}}
+        </nav>
 
     </div>
     <div class="og-footer-classic__social {{columnModifier}}">
         {{> atoms/title/h2 title="Síguenos" modifier="a-text--secondary a-text--m"}}
+        <nav class="a-text l-flex l-flex--direction-column">
+            {{> atoms/title/link title="Política de Cookies" modifier=linkModifier}}
+            {{> atoms/title/link title="Política de Privacidad" modifier=linkModifier}}
+        </nav>
 
     </div>
 </footer>
