@@ -1,22 +1,22 @@
-<footer class="og-footer-classic a-bg--secondary l-flex a-pad a-text--center">
-    <div class="og-footer-classic__about l-column l-column--1-4">
+<footer class="og-footer-classic a-bg l-flex l-flex--wrap a-pad">
+    <div class="og-footer-classic__about {{columnModifier}}">
         {{> atoms/title/h2 title="Sobre Nosotros" modifier="a-text--secondary a-text--m"}}
 
     </div>
-    <div class="og-footer-classic__services l-column l-column--1-4">
-        {{> atoms/title/h2 title="Servicios" modifier="a-text--secondary a-text--m  a-pad--bottom"}}
-        <nav class="a-text">
-            {{> atoms/title/link title="Cursos" modifier="a-text--s a-text--secondary a-pad--right"}}
-            {{> atoms/title/link title="SEO" modifier="a-text--s a-text--secondary a-pad--right"}}
-            {{> atoms/title/link title="Aprende" modifier="a-text--s a-text--secondary a-pad--right"}}
-            {{> atoms/title/link title="Optimización" modifier="a-text--s a-text--secondary a-pad--right"}}
+    <div class="og-footer-classic__services {{columnModifier}}">
+        {{> atoms/title/link title="Servicios" modifier=(concat linkModifier " a-text a-text--secondary a-text--m a-pad--bottom ") }}
+        <nav class="a-text l-flex l-flex--direction-column">
+            {{> atoms/title/link title="Cursos" modifier=(concat linkModifier " a-text--s a-text--secondary a-pad--right")}}
+            {{> atoms/title/link title="SEO" modifier=(concat linkModifier " a-text--s a-text--secondary a-pad--right")}}
+            {{> atoms/title/link title="Aprende" modifier=(concat linkModifier " a-text--s a-text--secondary a-pad--right")}}
+            {{> atoms/title/link title="Optimización" modifier=(concat linkModifier " a-text--s a-text--secondary a-pad--right")}}
         </nav>
     </div>
-    <div class="og-footer-classic__others l-column l-column--1-4">
+    <div class="og-footer-classic__others {{columnModifier}}">
         {{> atoms/title/h2 title="Otros" modifier="a-text--secondary a-text--m  a-pad--bottom"}}
 
     </div>
-    <div class="og-footer-classic__social l-column l-column--1-4">
+    <div class="og-footer-classic__social {{columnModifier}}">
         {{> atoms/title/h2 title="Síguenos" modifier="a-text--secondary a-text--m"}}
 
     </div>
