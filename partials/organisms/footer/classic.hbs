@@ -1,46 +1,32 @@
-<footer class="og-footer-classic a-bg l-flex l-flex--wrap a-pad u-shadow--top">
+<footer class="og-footer-classic a-bg--dark l-flex l-flex--wrap a-pad u-shadow--top">
     <div class="og-footer-classic__about {{columnModifier}}">
         {{> atoms/title/h2 title="Sobre Nosotros" modifier="a-text--secondary a-text--m"}}
         <nav class="a-text l-flex l-flex--direction-column">
             {{> atoms/title/link title="Contacto" modifier=linkModifier }}
             {{> atoms/paragraph/simple
-                    modifier="a-text--secondary a-text--s"
+                    modifier="a-text--secondary a-text--xs a-pad--y-5"
                     text="Dirección: Carrer Na Llobera,  Vilafranca de Bonany,
                         Mallorca, Islas Baleares, 07250"}}
-
         </nav>
-    </div>
     </div>
     <div class="og-footer-classic__services {{columnModifier}}">
-        {{> atoms/title/link title="Servicios" modifier=" a-pad--right a-text--link--secondary a-text a-text--secondary a-text--m a-pad--bottom" }}
-        <nav class="a-text l-flex l-flex--direction-column">
-            {{> atoms/title/link title="Cursos" modifier=linkModifier}}
-            {{> atoms/title/link title="SEO" modifier=linkModifier}}
-            {{> atoms/title/link title="Aprende" modifier=linkModifier}}
-            {{> atoms/title/link title="Optimización" modifier=linkModifier}}
-        </nav>
+        {{> atoms/title/link
+                title="Servicios"
+                modifier="a-pad--right a-text--link--secondary a-text a-text--secondary a-text--m"
+        }}
+        {{> molecules/block/links modifier=""}}
     </div>
     <div class="og-footer-classic__others {{columnModifier}}">
-        {{> atoms/title/h2 title="Otros" modifier="a-text--secondary a-text--m  a-pad--bottom"}}
-        <nav class="a-text l-flex l-flex--direction-column">
-            {{> atoms/title/link title="Política de Cookies" modifier=linkModifier}}
-            {{> atoms/title/link title="Política de Privacidad" modifier=linkModifier}}
-        </nav>
-
+        {{> atoms/title/h2
+                title="Otros"
+                modifier="a-pad--right a-text--secondary a-text a-text--secondary a-text--m"
+        }}
+        {{> molecules/block/links modifier=""}}
     </div>
     <div class="og-footer-classic__social {{columnModifier}}">
-        {{> atoms/title/h2 title="Síguenos" modifier="a-text--secondary a-text--m"}}
-        <nav class="ml-social-simple a-text l-flex a-pad">
-            <a href="#" class="ml-social-simple__network a-svg a-svg--brand a-pad--x-5">
-                {{> atoms/icons/social/twitter}}
-            </a>
-            <a href="#" class="ml-social-simple__network a-svg a-svg--brand a-pad--x-5">
-                {{> atoms/icons/social/whatsapp}}
-            </a>
-            <a href="#" class="ml-social-simple__network a-svg a-svg--brand a-pad--x-5">
-                {{> atoms/icons/social/facebook}}
-            </a>
-        </nav>
-
+        {{> atoms/title/h2 title="Únete a la Comunidad"
+                modifier="a-text--secondary a-text--m"}}
+        {{> molecules/social/simple
+                modifier=""}}
     </div>
 </footer>

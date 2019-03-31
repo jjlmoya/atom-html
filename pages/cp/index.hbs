@@ -5,11 +5,12 @@
                 u-shadow--bottom a-pad-40">
         {{> molecules/text/quote
                 modifier="og-card-random-phrase__image l-column--1-1"}}
-        <div class="og-card-random-phrase__action l-position--absolute l-position--absolute--top-right">
-            <img width="15" src="https://cdn.onlinewebfonts.com/svg/img_294583.png"/>
+        <div class="og-card-random-phrase__action l-position--absolute l-position--absolute--top-right u-pointer a-svg a-svg--brand">
+            {{> atoms/icons/random}}
         </div>
         {{> molecules/share/deploy
                 modifier="ml-share-deploy--bottom l-position--absolute--top-left"
+                iconModifier="a-svg--brand"
                 id="unique"}}
     </div>
     {{> organisms/articles/condensed}}
