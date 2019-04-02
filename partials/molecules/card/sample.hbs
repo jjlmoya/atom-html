@@ -1,16 +1,17 @@
-<div class="ml-card-sample l-flex l-flex--direction-column {{modifier}} a-pad l-position">
+<div class="ml-card-sample l-flex l-flex--direction-column {{modifier}} a-pad">
     <div class="ml-card-sample__title a-bg--dark l-column--1-1">
         {{> atoms/title/h3 title="Binary Tree" modifier="a-text--secondary a-text--center a-pad--y"}}
     </div>
-    <div class="ml-card-sample__container a-bg l-column--1-1">
+    <div class="ml-card-sample__container a-bg l-column--1-1 l-position">
         {{> atoms/image/normal
                 src="https://d2wnixsywa9nb4.cloudfront.net/wp-content/uploads/2017/12/02135818/LeetCode_logo.png"
                 pictureClass="l-column--1-1"
                 modifier="l-column--1-1 a-pad--y"
         }}
+        {{> molecules/share/deploy
+                modifier="ml-share-deploy ml-share-deploy--right l-position--absolute--bottom-left"
+                iconModifier=""
+                id="unique"}}
     </div>
-    {{> molecules/share/deploy
-            modifier="ml-share-deploy ml-share-deploy--right l-position--absolute--bottom-left"
-            iconModifier=""
-            id="unique"}}
+
 </div>
