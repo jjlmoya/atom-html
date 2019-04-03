@@ -1,7 +1,10 @@
-<div class="og-slider--simple__content l-column--1-1 l-flex l-flex--justify-space-between l-flex--align-center l-flex--direction-column l-position">
+<div id="{{id}}" class="og-slider--simple__slide
+                        l-column--1-1
+                        l-flex l-flex--justify-space-evenly l-flex--align-center l-flex--direction-column l-position
+                        {{modifier}}">
     {{> atoms/image/background
             modifier="a-image--cover"
-            pictureClass="bs_viewport a-mi--color-grayscale"
+            pictureClass=""
             src="https://cdnb.artstation.com/p/assets/images/images/008/331/651/large/bakhytzhan-shabdukarimov-new-demo-5-vostok.jpg?1512057321"}}
     {{> atoms/title/h2
             title="Mriya's Collection"
@@ -9,8 +12,7 @@
     }}
     {{> atoms/button/linear
             cta="Mriya"
-            modifier="a-button a-button--m"
+            modifier="a-mar a-button a-button--m"
     }}
-    {{> molecules/slider/buttons
-            modifier="og-slider--simple__buttons a-pad"}}
+
 </div>
