@@ -1,5 +1,3 @@
-
-
 <div class="og-slider--simple l-flex l-flex--align-center l-flex--justify-center l-position bs_slider">
     {{> molecules/slider/arrow
             direction="left"
@@ -8,15 +6,15 @@
             direction="right"
             modifier="ml-arrow--full
                       l-flex l-flex--align-center l-flex--justify-center"}}
-    <div class="og-slider--simple__content">
-        {{> molecules/slider/content id="1"}}
-        {{> molecules/slider/content id="2"}}
-        {{> molecules/slider/content id="3"}}
-        {{> molecules/slider/content id="4"}}
-        {{> molecules/slider/content id="5"}}
+    <div class="og-slider--simple__content bs_slider_content">
+        {{> molecules/slider/content id="1" modifier="bs_slide"}}
+        {{> molecules/slider/content id="2" modifier="bs_slide"}}
+        {{> molecules/slider/content id="3" modifier="bs_slide"}}
+        {{> molecules/slider/content id="4" modifier="bs_slide"}}
+        {{> molecules/slider/content id="5" modifier="bs_slide"}}
     </div>
     {{> molecules/slider/buttons
             modifier="l-position--absolute l-position--absolute--bottom og-slider--simple__buttons a-pad"
-            modifierIcon=""}}
+            modifierIcon="bs_slider_button"}}
 </div>
 
