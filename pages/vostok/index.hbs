@@ -2,15 +2,19 @@
     <div class="og-header-double--logo a-bg l-flex l-flex--justify-center l-flex--align-center">
         {{> atoms/image/normal
                 pictureClass=""
-                modifier="s"
+                modifier="a-pad-5"
                 src="https://www.e-zegarki.pl/common/img/logos/brands/big/white/vostok-europe.png"}}
     </div>
     <nav class="og-header-double--navigation
-                l-flex l-flex--justify-center
-                a-pad-10 a-bg--mono-1">
-        {{#times 4}}
-            <a href="#" class="a-text a-text--link og-header-double--navigation--link a-pad--x">Enlace 1</a>
+                l-flex l-flex--align-center
+                a-pad-5 a-bg--mono-1">
+        {{#times 10}}
+            <a href="#" class="og-header-double--navigation--link a-text a-text--xs a-text--link">Relojes</a>
         {{/times}}
     </nav>
 </div>
 {{> organisms/slider/simple}}
+
+{{#times 50}}
+    <br>
+{{/times}}
