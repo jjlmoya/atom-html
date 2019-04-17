@@ -1,18 +1,4 @@
-<div class="og-header-double l-position--sticky u-layer-1">
-    <div class="og-header-double--logo a-bg l-flex l-flex--justify-center l-flex--align-center">
-        {{> atoms/image/normal
-                pictureClass=""
-                modifier="a-pad-5"
-                src="https://www.e-zegarki.pl/common/img/logos/brands/big/white/vostok-europe.png"}}
-    </div>
-    <nav class="og-header-double--navigation
-                l-flex l-flex--align-center
-                a-pad-5 a-bg--mono-1">
-        {{#times 10}}
-            <a href="#" class="og-header-double--navigation--link a-text a-text--xs a-text--link">Relojes</a>
-        {{/times}}
-    </nav>
-</div>
+{{> organisms/header/og-header-double}}
 {{> organisms/slider/simple}}
 
 {{#times 50}}
