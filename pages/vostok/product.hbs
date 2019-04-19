@@ -1,0 +1,27 @@
+{{> organisms/header/og-header-double}}
+<div class="og-poster-detail
+            a-pad-40
+            a-pad--mobile-20
+            l-flex l-flex--justify-center l-flex--mobile--wrap ">
+    {{> atoms/image/poster
+            src="https://es.t-mobile.com/sdcdn/dtmobile//content/dam/t-mobile/en-p/internet-devices/apple/watch-series4-44/space-gray-black-band/Apple-WatchSeries4-Cellular-44mm-AluminumSpaceGray-SportBand-Black-1-3x.jpg"
+            pictureClass="a-text--right l-column--1-2 l-column--mobile--1-1"
+            modifier="l-column--1-1"
+    }}
+    <div class="og-poster_detail__text
+                a-pad-40
+                a-pad--mobile--top-40
+                a-pad--mobile--left
+                l-column--1-2
+                l-column--mobile--1-1
+                l-flex l-flex--direction-column l-flex--align-start">
+        {{> atoms/title/h2 title="Atomic Watch" modifier="a-text--shadow a-text--left a-text--bold"}}
+
+        {{#times 4}}
+            {{> atoms/paragraph/simple
+                    text="Two brothers follow their father's footsteps as hunters,
+                 fighting evil supernatural beings of many kinds, including monsters,
+                  demons, and gods that roam the earth." modifier="a-pad--y a-text--s a-text--light l-column--2-3"}}
+        {{/times}}
+    </div>
+</div>
