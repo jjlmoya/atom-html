@@ -1,0 +1,33 @@
+<ul class="ml-breadcrumb-solid a-bg--light l-flex a-mar-0 a-text a-text--xs a-text--secondary">
+    <li class="ml-breadcrumb-solid__element
+               a-pad--x"></li>
+    {{#if path}}
+        {{#each path}}
+            <li class="ml-breadcrumb-solid__element
+               a-pad--x">
+                <a class="u-pointer ml-breadcrumb-solid__element__content">
+                    {{this}}
+                </a>
+            </li>
+        {{/each}}
+    {{else}}
+        <li class="ml-breadcrumb-solid__element
+               a-pad--x">
+            <a class="u-pointer ml-breadcrumb-solid__element__content">
+                🏠
+            </a>
+        </li>
+        <li class="ml-breadcrumb-solid__element a-pad--x">
+            <a class="u-pointer ml-breadcrumb-solid__element__content">
+                Relojes Atómicos
+            </a>
+        </li>
+        <li class="ml-breadcrumb-solid__element
+               a-pad--x">
+            <span class="ml-breadcrumb-solid__element__content">Atomic Watch</span>
+        </li>
+    {{/if}}
+
+</ul>
+
+{{#each test}}{{this}}{{/each}}
