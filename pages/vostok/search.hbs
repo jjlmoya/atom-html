@@ -1,3 +1,13 @@
-{{> organisms/header/og-header-double}}
-{{> molecules/breadcrumb/solid modifier="" path=(arr "Inicio,Búsqueda")}}
+{{> organisms/header/double
+        logo="https://www.e-zegarki.pl/common/img/logos/brands/big/white/vostok-europe.png"
+        background="a-bg--mono-9"
+        nav=(arr "Inicio,Buscador,Ejemplo")
+        url=(arr "/vostok/,/vostok/search,/vostok/product")
+}}
+{{> molecules/breadcrumb/solid
+        path=(arr "Inicio,Búsqueda")
+        url=(arr "/vostok/,/#")
+        modifier="a-text a-bg"
+        linksModifier="a-text--link--secondary"
+}}
 {{> organisms/block/samples}}

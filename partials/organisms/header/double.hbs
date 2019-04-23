@@ -1,0 +1,20 @@
+<div class="og-header-double l-position--sticky u-layer-1 {{modifier}}">
+    <div class="og-header-double--logo {{background}} l-flex l-flex--justify-center l-flex--align-center">
+        {{> atoms/image/normal
+                pictureClass=""
+                modifier=""
+                src=logo }}
+    </div>
+    <nav class="og-header-double--navigation
+                l-flex l-flex--align-center
+                a-pad-5 a-bg--mono-1">
+        {{#if nav}}
+            {{#each nav}}
+                <a href="{{lookup ../url @index}}"
+                   class="og-header-double--navigation--link
+                        a-text a-text--xs a-text--link a-text--center">{{this}}</a>
+            {{/each}}
+        {{/if}}
+
+    </nav>
+</div>
