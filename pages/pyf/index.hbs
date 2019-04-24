@@ -5,11 +5,11 @@
             modifier="a-text--center a-pad-20"
     }}
     <div class="og-article-avatar__list l-flex l-flex--wrap l-flex--justify-center a-pad">
-        {{#times 5}}
+        {{#each images.products}}
             <div class="ml-article-avatar l-column--1-2 l-column--mobile--1-1 a-pad l-flex l-flex--align-center">
                 <a href="" class="ml-article-avatar__picture u-pointer">
                     {{> atoms/image/avatar
-                            src="https://res.cloudinary.com/teepublic/image/private/s--nJGOINFQ--/t_Preview/b_rgb:ffffff,c_limit,f_jpg,h_630,q_90,w_630/v1520790301/production/designs/2457160_0.jpg"
+                            src=this
                             pictureClass=""
                             modifier="ml-article-avatar__image a-image--avatar--xl u-shadow u-shadow--bottom a-border a-border--fat a-border--light"
                     }}
@@ -27,6 +27,6 @@
 
                 </div>
             </div>
-        {{/times}}
+        {{/each}}
     </div>
 </section>
