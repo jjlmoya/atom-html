@@ -1,10 +1,10 @@
-<div class="og-articles-condensed a-pad">
-    {{> atoms/title/h2 title="Artículos para ti" modifier="a-pad a-text-brand "}}
+<div class="og-articles-condensed a-pad {{modifier}}">
+    {{> atoms/title/h2 title=title modifier="a-pad a-text-brand"}}
     <div class="og-articles-condensed__container l-flex l-flex--wrap l-flex--justify-center ">
         {{#times 8}}
             {{> molecules/article/condensed
                     src="https://miviaje.com/wp-content/uploads/2017/09/berlin.jpg"
-                    modifier=""
+                    modifier="a-mar-5"
                     excerpt="Descubre lo que hacer en Berlín y descubre todos sus secretos."
                     title="Berlín"
             }}
