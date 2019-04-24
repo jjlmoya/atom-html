@@ -8,13 +8,13 @@
     <nav class="og-header-double--navigation
                 l-flex l-flex--align-center
                 a-pad-5 a-bg--mono-1">
-        {{#if nav}}
-            {{#each nav}}
-                <a href="{{lookup ../url @index}}"
-                   class="og-header-double--navigation--link
-                        a-text a-text--xs a-text--link a-text--center">{{this}}</a>
-            {{/each}}
-        {{/if}}
+        <a class="og-header-double--navigation--link
+                        a-text a-text--xs a-text--link a-pad--x a-text--center" href="{{path}}">Inicio</a>
+        {{#each pages}}
+            <a href="{{../path}}{{path}}"
+               class="og-header-double--navigation--link
+                        a-text a-text--xs a-text--link a-pad--x a-text--center">{{name}}</a>
+        {{/each}}
 
     </nav>
 </div>
