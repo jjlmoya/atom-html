@@ -1,0 +1,19 @@
+<div class="ml-product-float a-bg--gradient--transparent-to-top
+            a-mar a-mar--top-{{margin}}
+            l-flex l-flex--align-center">
+    <div class="ml-product-float__content
+                l-flex l-flex--direction-column l-flex-align--center
+                a-mar-auto a-bg a-pad--x">
+        {{> atoms/image/normal
+                pictureClass="a-text--center"
+                modifier=(concat "a-mar--minus-" margin)
+                src=images.transparent}}
+        {{> atoms/title/h2 modifier="a-text--m a-text--secondary a-pad--y-5" title=title}}
+        {{#if price}}
+            {{> atoms/content/price modifier="a-text--secondary a-text--bold a-pad--y-5" value="2.35" currency="€"}}
+        {{/if}}
+        {{> atoms/paragraph/simple
+                modifier="a-text--secondary a-text--xs a-pad--y-5"
+                text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore." }}
+    </div>
+</div>

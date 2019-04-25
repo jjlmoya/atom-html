@@ -1,17 +1,12 @@
 {{> organisms/header/double
-        logo="https://cintiplanes.es/wp-content/uploads/2019/04/logoCP.png"
+        logo=logo
         modifier="og-header-double--overflow"
-        background="a-bg--light"
+        background="a-bg--mono-0"
 
 }}
-{{> molecules/breadcrumb/solid
-        path=(arr "Inicio, Guías de Viaje, Berlín, Gastronomía")
-        url=(arr "/cp/, /cp/guia-de-viaje/, /cp/guia-de-viaje/berlin, /cp/gastronomía/berlin")
-        modifier="a-bg--secondary"
-        linksModifier=""
-}}
-
-
+{{> organisms/slider/simple}}
+{{> organisms/banner/basic modifier="a-mi  bs_viewport"}}
+{{> organisms/block/contact}}
 
 {{> organisms/footer/classic
         linkModifier="a-text--xs a-text--secondary a-pad--top-5 a-text--link--secondary"
