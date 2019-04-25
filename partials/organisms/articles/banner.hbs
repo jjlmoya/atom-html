@@ -1,5 +1,5 @@
 <div class="og-articles-banner l-flex l-flex--wrap a-pad">
-    {{#times 3 }}
-        {{> molecules/article/banner}}
-    {{/times}}
+    {{#each images.products}}
+        {{> molecules/article/banner src=this}}
+    {{/each}}
 </div>
