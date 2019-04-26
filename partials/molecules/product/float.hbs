@@ -12,6 +12,10 @@
         {{#if price}}
             {{> atoms/content/price modifier="a-text--secondary a-text--bold a-pad--y-5" value="2.35" currency="€"}}
         {{/if}}
+        {{> molecules/message/demand
+                message="Dios está matando 1 gatito"
+                icon="atoms/icons/animals/kitty"
+        }}
         {{> atoms/paragraph/simple
                 modifier="a-text--secondary a-text--xs a-pad--y-5"
                 text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore." }}
