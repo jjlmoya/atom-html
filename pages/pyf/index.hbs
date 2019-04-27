@@ -1,4 +1,15 @@
 <!--{{> organisms/articles/avatar  modifier=""}}-->
 
-
-{{> molecules/product/float title="Tomate" background="a-bg"  margin="60"}}
+<div class="l-flex l-flex--justify-center l-flex--wrap">
+    {{#each images.products}}
+        {{> molecules/product/float
+                discount=true
+                title="Tomate"
+                image=this
+                background="a-bg"
+                margin="60"}}
+    {{/each}}
+    {{> molecules/product/float discount=true title="Tomate" background="a-bg"  margin="60"}}
+    {{> molecules/product/float discount=true title="Tomate" background="a-bg"  margin="60"}}
+    {{> molecules/product/float discount=true title="Tomate" background="a-bg"  margin="60"}}
+</div>
