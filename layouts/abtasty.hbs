@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html>
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/css/index.min.css" media="all">
 <meta name="title" content="{{name}}">
+<meta name="application-name"
+      content="IBJ_ES"
+      data-storage-key="business"
+      data-business-line="TOURS"
+/>
 <title>{{name}}</title>
 <link rel="stylesheet" href="https://d1mu6onvg8psse.cloudfront.net/dist/assets/css/iberojet/main.css" media="all">
-<link rel="stylesheet" href="https://d1hkxmgwhmmdhs.cloudfront.net/dist/assets/css/iberojet/caribbean/main.css?v=251120180829">
-<link rel="stylesheet" href="https://d1hkxmgwhmmdhs.cloudfront.net/dist/assets/css/iberojet/tours/main.css?v=260420190704">
+<link rel="stylesheet"
+      href="https://d1hkxmgwhmmdhs.cloudfront.net/dist/assets/css/iberojet/caribbean/main.css?v=251120180829">
+<link rel="stylesheet"
+      href="https://d1hkxmgwhmmdhs.cloudfront.net/dist/assets/css/iberojet/tours/main.css?v=260420190704">
 
 <body class="{{brand}}">
-    {{{body}}}
-    <script type="text/javascript" src="/js/components.min.js"></script>
-
+{{{body}}}
+<script type="text/javascript" src="/js/components.min.js"></script>
+<script>
+    (function () {
+        var locators = {
+                    tag: {
+                        applicationName: 'application-name'
+                    }
+                },
+                model = [],
+                getMetaHeadByName = function (name) {
+                    return document.head.querySelector('[name="' + name + '"]');
+                },
+                init = function () {
+                    var application = getMetaHeadByName(locators.tag.applicationName);
+                    if (application) {
+                        console.log(application.dataset);
+                    }
+                };
+        init();
+    })();
+</script>
 </body>
 </html>

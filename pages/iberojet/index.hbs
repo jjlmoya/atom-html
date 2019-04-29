@@ -24,14 +24,12 @@
                                 class="c-btn c-btn--tertiary c-btn--small c-btn--uppercase c-btn--full"> reservar </a>
                             <!----></div>
                     </itineraries-header-price>
-                    <itineraries-header-budget class="pg-m-save-budget">
-                        <a class="a-text a-text--bold a-text--brand--secondary a-text--xs pg-m-save-budget__link l-flex l-flex--justify-end">
-
-                            <span class=" c-icon c-icon-euro-budget pg-a-color-secondary c-icon--big"></span>
-                            <span class="a-mar--x-5 a-text--link a-text--underline">Guardar Presupuesto</span>
-                        </a>
-                            Guardar Presupuesto
-                         </a>
+                    <itineraries-header-budget>
+                        {{> atoms/button/text-icon
+                                modifier="pg-m-save-budget__link a-button-xs a-button--mono-0 a-border--smooth a-text--uppercase a-fix--m a-mar--y"
+                                svg="atoms/icons/utils/eye"
+                                cta="Guarda tu Presupuesto"
+                        }}
                     </itineraries-header-budget>
                 </div>
             </div>
@@ -97,9 +95,6 @@
                 <span>Visitando: </span> Bucarest, Sibiu, Bistrita, Bucovina, Cárpatos, Brasov y Sinaia
             </div>
         </div>
-
-        {{> molecules/message/demand message="Síguenos en Facebook" icon="atoms/icons/social/facebook"}}
-
         <div class="m-offer-tours__desc">
             <h3 class="m-offer-tours__title" data-prop="name" itemprop="name" content="Rumanía histórica"
                 data-content="Rumanía histórica">

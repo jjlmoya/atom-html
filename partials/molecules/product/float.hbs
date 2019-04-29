@@ -1,8 +1,8 @@
 <div class="ml-product-float a-bg--gradient--transparent-to-top
             a-mar a-mar--top-{{margin}}
-            l-flex l-flex--align-center">
+            l-flex l-flex--align-center l-flex--justify-center l-flex--direction-column">
     <div class="ml-product-float__content
-                l-flex l-flex--direction-column l-flex-align--center
+                l-flex l-flex--direction-column  l-flex-align--center
                 a-mar-auto a-bg a-pad--x">
         {{> atoms/image/normal
                 pictureClass="a-text--center"
@@ -25,4 +25,6 @@
                 modifier="a-text--secondary a-text--xs a-pad--y-5"
                 text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore." }}
     </div>
+    {{> molecules/action/icons
+            modifier="ml-product-float__action a-mar--minus"}}
 </div>
