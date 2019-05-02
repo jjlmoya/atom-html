@@ -6,7 +6,7 @@
 <meta name="application-name"
       content="IBJ_ES"
       data-storage-key="business"
-      data-business-line="TOURS"
+      data-business-line="HOTELS"
 />
 <title>{{name}}</title>
 <link rel="stylesheet" href="https://d1mu6onvg8psse.cloudfront.net/dist/assets/css/iberojet/main.css" media="all">
@@ -17,22 +17,31 @@
 
 <body class="{{brand}}">
 {{{body}}}
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.core.min.js"></script>
 <script type="text/javascript" src="/js/components.min.js"></script>
 <script>
+
+
     (function () {
         var locators = {
                     tag: {
                         applicationName: 'application-name'
-                    }
+                    },
                 },
-                model = [],
+                setLocalStorage = function (businessLine, key) {
+                    localStorage.setItem(key, businessLine)
+                },
                 getMetaHeadByName = function (name) {
                     return document.head.querySelector('[name="' + name + '"]');
+                },
+                setNewData = function (businessLine, key) {
+                    setLocalStorage(businessLine, key);
                 },
                 init = function () {
                     var application = getMetaHeadByName(locators.tag.applicationName);
                     if (application) {
-                        console.log(application.dataset);
+                        setNewData(application.dataset.businessLine, application.dataset.storageKey);
                     }
                 };
         init();

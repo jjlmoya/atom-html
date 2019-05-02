@@ -6,10 +6,12 @@
     }}
     {{> atoms/title/h3 title="Guía de viaje"
             modifier="a-bg bs_viewport a-mar--minus-20 a-mi a-mi--left ml-article-banner__tag l-column--2-3 a-mar-auto a-pad-20 a-text--center a-text--secondary"}}
-    {{> molecules/message/demand modifier="a-mar"
-            message="Dios está matando 1 gatito"
-            icon="atoms/icons/animals/kitty"
-    }}
+    {{#if urgency}}
+        {{> molecules/message/demand modifier="a-mar"
+                message="Dios está matando 1 gatito"
+                icon="atoms/icons/animals/kitty"
+        }}
+    {{/if}}
     {{> atoms/paragraph/simple
             text="Entra y descubre los rincones de las Isla. navega conmigo y esas cosas para rellenar la caja..."
             modifier="a-pad a-text--center"
