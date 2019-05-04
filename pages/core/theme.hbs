@@ -1,10 +1,12 @@
 <div class="l-position">
     <nav class="l-position--sticky u-shadow--bottom u-layer-5 a-bg--mono-0 a-pad ">
         {{#each brands}}
-            {{> atoms/title/link title=this link=(concat '#' this) modifier=(concat "a-text--shadow a-text--uppercase a-pad--right " this)}}
+            {{> atoms/title/link title=this
+                    link=(concat '#' this)
+                    modifier=(concat "a-text--shadow a-text--uppercase a-pad--right " this)}}
         {{/each}}
     </nav>
     {{#each brands}}
-        {{> organisms/visual/colors brand=this modifier="bs_viewport a-mi a-mi--left"}}
+        {{> organisms/visual/colors brand=this logo=../this.logo modifier="bs_viewport a-mi a-mi--left"}}
     {{/each}}
 </div>
