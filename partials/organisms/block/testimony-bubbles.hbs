@@ -1,0 +1,42 @@
+<section class="og-bubble-action
+            l-grid-column--full l-flex l-column--1-1 l-flex--wrap {{modifier}}">
+    <div class="og-bubble-action__aside
+                l-flex--grow l-position a-pad-40">
+        {{#each images.products}}
+            <div class="og-bubble-action__aside__element l-position--absolute a-mi--float ">
+                <button>
+                    {{> atoms/image/avatar
+                            modifier="bs_image_replace a-border u-shadow--bottom a-border--primary"
+                            target=".og-bubble-action__content__image"
+                            src=this}}
+                </button>
+            </div>
+        {{/each}}
+    </div>
+    <div class="og-bubble-action__content
+                l-flex--grow--2 l-column--2-5 l-column--mobile--1-1
+                l-flex l-flex--direction-column l-flex--justify-center l-flex--align-center">
+        {{> atoms/image/avatar
+                modifier="og-bubble-action__content__image -border u-shadow--bottom a-border--primary"
+                src=images.product}}
+        {{> atoms/title/h1 title="Cursos" modifier="a-pad--y a-text--brand"}}
+        {{> atoms/paragraph/simple
+                modifier="l-column--2-3"
+                text="Si te estás planeando llevar tu negocio a internet o si ya lo has hecho pero no acaba de despegar podemos ayudarte con tu proyecto:
+                     Somos una empresa de Mallorca especializada en servicios de posicionamiento en buscadores, creación de páginas web y optimización de ventas."
+        }}
+    </div>
+    <div class="og-bubble-action__aside
+                l-flex--grow l-position a-pad-40">
+        {{#each images.products}}
+            <div class="og-bubble-action__aside__element l-position--absolute a-pad a-mi--float">
+                <button>
+                    {{> atoms/image/avatar
+                        modifier="bs_image_replace a-border u-shadow--bottom a-border--primary"
+                        target=".og-bubble-action__content__image"
+                        src=this}}
+                </button>
+            </div>
+        {{/each}}
+    </div>
+</section>
