@@ -2,15 +2,14 @@
 
 
 {{> molecules/breadcrumb/solid
-        path=(arr "Inicio, Guías de Viaje, Berlín, Transporte")
-        url=(arr "/cp/, /cp/guia-de-viaje/, /cp/guia-de-viaje/berlin, /cp/gastronomía/berlin")
-        modifier="a-bg--secondary"
+        path=(arr "Inicio, Cursos")
+        url=(arr "/bonseo/, /bonseo/cursos/")
+        modifier="a-bg--secondary bs_theme"
         linksModifier=""
 }}
+{{> layout/components title="Road" modifier="og-articles-road bs_theme" partial="molecules/card/road"}}
 
-{{> layout/components title="Road" modifier="og-articles-road" partial="molecules/card/road"}}
-
-{{> organisms/articles/quark modifier=""}}
+{{> organisms/articles/quark title ="Quark" modifier=""}}
 
 
 {{> organisms/block/cards-background modifier=""}}
