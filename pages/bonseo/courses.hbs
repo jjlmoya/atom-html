@@ -1,23 +1,37 @@
 {{> organisms/header/logo-inline}}
 
 
+
 {{> molecules/breadcrumb/solid
         path=(arr "Inicio, Cursos")
         url=(arr "/bonseo/, /bonseo/cursos/")
         modifier="a-bg--secondary bs_theme"
         linksModifier=""
 }}
-{{> layout/components title="Road" modifier="og-articles-road bs_theme" partial="molecules/card/road"}}
+
+{{> layout/components title="Road"
+        modifier="og-articles-road bs_theme"
+        partial="molecules/card/road"}}
+
+{{> atoms/image/exposure
+        src=images.product
+        pictureClass=""
+        modifier="a-image--cover"}}
+
+{{> atoms/image/parallax image=images.product}}
+
 
 {{> organisms/articles/quark title ="Quark" modifier=""}}
 
 
 {{> organisms/block/cards-background modifier=""}}
 {{> organisms/block/testimony-bubbles modifier=""}}
+
+
+
 {{> organisms/footer/classic
         linkModifier="a-text--xs a-text--secondary a-pad--top-5 a-text--link--secondary"
         columnModifier="l-column l-column--1-4 l-column--mobile--1-1
                          a-pad--x-20 a-pad--mobile-40
                          a-border a-border--light a-border--left a-border--mobile--bottom"}}
 
-{{> atoms/image/exposure src=images.product pictureClass="" modifier="a-image--cover"}}
