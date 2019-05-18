@@ -12,6 +12,24 @@
 
 }}
 
+<article class="ml-article-semicircle l-flex l-flex--wrap a-mar">
+    <div class="ml-article-semicircle__content
+                l-flex l-flex--direction-column l-flex--justify-center a-pad-5">
+        {{> atoms/title/h2 title="Prueba 2" modifier="a-text--brand a-text--bold"}}
+        {{> atoms/paragraph/simple
+                text="Una prueba de concepto con un pequeño extracto de artículo para ver como se adapta."
+                modifier=""}}
+    </div>
+    <div class="ml-article-semicircle__image l-position">
+        {{> atoms/image/normal
+                src=images.product
+                pictureClass="l-position--absolute"
+                modifier="a-image--cover"
+        }}
+    </div>
+</article>
+
+</div>
 {{> organisms/block/poster-detail modifier=""}}
 
 {{> atoms/image/parallax image=images.product}}
