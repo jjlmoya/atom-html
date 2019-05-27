@@ -5,23 +5,23 @@
             modifier="a-text--center a-pad-20"
     }}
     <nav class="og-article-avatar__list l-flex l-flex--wrap l-flex--justify-center a-pad">
-        {{#each images.products}}
+        {{#each this.mock.products}}
             <div class="ml-article-avatar l-column--1-2 l-column--mobile--1-1 a-pad l-flex l-flex--align-center">
                 <a href="#" class="ml-article-avatar__picture u-pointer">
                     {{> atoms/image/avatar
-                            src=this
+                            src=this.image
                             pictureClass=""
                             modifier="ml-article-avatar__image a-image--avatar--xl u-shadow u-shadow--bottom a-border a-border--fat a-border--light"
                     }}
                 </a>
                 <div class="ml-article-avatar__content l-flex l-flex--direction-column l-flex--justify-center l-flex--align-center a-bg--gradient--light a-bg--animated">
                     {{> atoms/title/link
-                            title="Aguacate dulce"
-                            link="#"
+                            title=this.name
+                            link=this.link
                             modifier="a-text--bold a-text--sm a-text--link a-text--secondary ml-article-avatar__title"
                     }}
                     {{> atoms/paragraph/simple
-                            text="Ha sido una experiencia extraordinaria, repetiría sin dudarlo, 10 de 10 y los dueños muy atentos…"
+                            text=this.description
                             modifier="a-pad--y a-text--secondary"
                     }}
 

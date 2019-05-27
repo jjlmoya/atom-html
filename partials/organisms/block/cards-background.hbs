@@ -1,14 +1,14 @@
 <section class="og-cards-background l-grid-column--full
                 l-flex l-flex--wrap l-flex--justify-center {{modifier}}">
-    {{#times 3}}
+    {{#each this.mock.products}}
         <a href="#" class="og-cards-background__article
                         l-column--1-4 l-column--mobile--1-1 l-position
                         a-mar-5 u-pointer u-shadow--bottom a-text">
             {{> atoms/image/background
                     modifier="a-image--cover a-border--smooth"
                     pictureClass=""
-                    src=images.bg}}
-            {{> atoms/title/h2 title="Titulo" modifier="a-pad-20 a-text--shadow a-text--secondary a-text--bold"}}
+                    src=this.image}}
+            {{> atoms/title/h2 title=this.name modifier="a-pad-20 a-text--shadow a-text--secondary a-text--bold"}}
         </a>
-    {{/times}}
+    {{/each}}
 </section>

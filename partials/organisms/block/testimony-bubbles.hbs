@@ -2,13 +2,13 @@
             l-grid-column--full l-flex l-column--1-1 l-flex--wrap {{modifier}}">
     <div class="og-bubble-action__aside
                 l-flex--grow l-position a-pad-40">
-        {{#each images.products}}
+        {{#each this.mock.products}}
             <div class="og-bubble-action__aside__element l-position--absolute a-mi--float ">
                 <button>
                     {{> atoms/image/avatar
                             modifier="bs_image_replace a-border u-shadow--bottom a-border--primary"
                             target=".og-bubble-action__content__image"
-                            src=this}}
+                            src=this.image}}
                 </button>
             </div>
         {{/each}}
@@ -28,13 +28,13 @@
     </div>
     <div class="og-bubble-action__aside
                 l-flex--grow l-position a-pad-40">
-        {{#each images.products}}
+        {{#each this.mock.products}}
             <div class="og-bubble-action__aside__element l-position--absolute a-pad a-mi--float">
                 <button>
                     {{> atoms/image/avatar
                         modifier="bs_image_replace a-border u-shadow--bottom a-border--primary"
                         target=".og-bubble-action__content__image"
-                        src=this}}
+                        src=this.image}}
                 </button>
             </div>
         {{/each}}

@@ -1,5 +1,5 @@
 <section class="og-articles-banner l-flex l-flex--wrap a-pad">
-    {{#each images.products}}
-        {{> molecules/article/banner src=this}}
+    {{#each this.mock.products}}
+        {{> molecules/article/banner src=this.image}}
     {{/each}}
 </section>

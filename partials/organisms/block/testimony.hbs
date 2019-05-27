@@ -4,12 +4,12 @@
             modifier="a-title--underline"
     }}
     <div class="og-block-testimony__group l-flex a-pad l-flex--wrap l-flex--justify-center ">
-        {{#each images.products}}
+        {{#each this.mock.products}}
             {{> molecules/card/testimony
-                    name=@index
-                    opinion="Ha sido una experiencia extraordinaria, repetiría sin dudarlo, 10 de 10 y los dueños muy atentos…"
+                    name=this.name
+                    opinion=this.description
                     modifier="l-column--1-2 l-column--mobile--1-1"
-                    image=this
+                    image=this.image
             }}
         {{/each}}
     </div>

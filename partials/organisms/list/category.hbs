@@ -18,10 +18,10 @@
             }}
             <nav class="og-list-category__row__content__navigation
                         l-flex l-flex--justify-center l-flex--wrap l-column--1-1">
-                {{#each images.products}}
+                {{#each this.mock.products}}
                     <a href="#" class="a-pad u-pointer">
                         {{> atoms/image/avatar
-                                src=this
+                                src=this.image
                                 pictureClass="a-pad "
                                 modifier="a-image--avatar--xl u-shadow u-shadow--bottom a-border a-border--fat a-border--light"
                         }}

@@ -1,15 +1,13 @@
 <!--{{> organisms/articles/avatar  modifier=""}}-->
 
 <div class="l-flex l-flex--justify-center l-flex--wrap">
-    {{#each images.products}}
+    {{#each this.mock.products}}
         {{> molecules/product/float
                 discount=true
-                title="Tomate"
-                image=this
+                title=this.name
+                image=this.image
+                price=this.price
                 background="a-bg"
                 margin="60"}}
     {{/each}}
-    {{> molecules/product/float discount=true title="Tomate" background="a-bg"  margin="60"}}
-    {{> molecules/product/float discount=true title="Tomate" background="a-bg"  margin="60"}}
-    {{> molecules/product/float discount=true title="Tomate" background="a-bg"  margin="60"}}
 </div>

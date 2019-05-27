@@ -2,12 +2,12 @@
     {{> atoms/title/h2 title=title modifier="a-text-brand a-pad--y"}}
     {{> atoms/paragraph/simple text=excerpt modifier="a-text--s"}}
     <div class="og-articles-condensed__container l-flex l-flex--wrap l-flex--justify-center ">
-        {{#each images.products}}
+        {{#each this.mock.products}}
             {{> molecules/article/condensed
                     src=this
                     modifier="a-mar-5"
-                    excerpt="Descubre lo que hacer en Berlín y descubre todos sus secretos."
-                    title="Berlín"
+                    excerpt=this.description
+                    title=this.name
             }}
         {{/each}}
     </div>

@@ -3,8 +3,8 @@
         {{> atoms/title/h2 title=title modifier="a-pad a-text  a-text--center a-text--brand"}}
     {{/if}}
     <div class="l-flex l-flex--justify-center l-flex--wrap">
-        {{#times 6}}
-            {{> (partial this.partial) }}
-        {{/times}}
+        {{#each this.mock.products}}
+            {{> (partial ../this.partial) }}
+        {{/each}}
     </div>
 </section>

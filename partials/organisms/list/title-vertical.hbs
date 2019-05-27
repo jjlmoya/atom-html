@@ -2,14 +2,14 @@
                 l-flex l-position a-bg {{modifier}}">
     {{> atoms/title/h1 title=name modifier="og-list-title-vertical__title a-text--secondary"}}
     <nav class="og-list-title-vertical__container l-flex l-flex--direction-column a-bg--mono-0 l-column--1-1 {{navModifier}}">
-        {{#each images.products}}
+        {{#each this.mock.products}}
             <div class="og-list-title-vertical__container__wrapper">
                 {{> molecules/article/rectangle
                         modifier=""
-                        title=(concat "Artículo " ../name)
-                        link="#"
-                        image=this
-                        excerpt="Cada día que pasa el Ruso se convierte más en un idioma esencial para servicios como el turismo."
+                        title=this.title
+                        link=this.link
+                        image=this.image
+                        excerpt=this.description
                 }}
                 {{> atoms/separator/classic}}
             </div>

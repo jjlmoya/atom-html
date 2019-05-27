@@ -1,10 +1,10 @@
 <section class="og-block-authors l-flex l-flex--justify-center l-flex--wrap a-pad-20 {{modifier}} ">
-    {{#each images.products}}
+    {{#each this.mock.products}}
         {{> molecules/card/author
-                name="Andres Montes"
-                image=this
-                career="Comentarista Deportivo"
-                description="Humorista y presentador, tenista y alpinista en la intimidad, no bebe alcohol..."
+                name=this.name
+                image=this.image
+                career=this.subtitle
+                description=this.description
         }}
     {{/each}}
 </section>

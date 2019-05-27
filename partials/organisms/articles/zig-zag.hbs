@@ -3,15 +3,12 @@
             title="Últimos Artículos"
             modifier="a-text--center a-text--bold a-pad"
     }}
-    {{#each images.products}}
+    {{#each this.mock.products}}
         {{> molecules/article/extract
-                title="Nuestros clientes te dan las bienvenida"
-                excerpt="Tenía en su casa una ama que pasaba de los cuarenta,
-         y una sobrina que no llegaba a los veinte,
-         y un mozo de campo y plaza,
-         que así ensillaba el rocín como tomaba la podadera."
+                title=this.title
+                excerpt=this.title
                 cta="Leer Más"
-                src=this
+                src=this.image
                 modifier="a-mi a-mi--left bs_viewport"
         }}
     {{/each}}
