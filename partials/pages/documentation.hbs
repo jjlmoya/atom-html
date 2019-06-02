@@ -1,0 +1,28 @@
+<div class="a-pad">
+    {{#each components}}
+        <h2>{{this.path}}</h2>
+        {{#each this.components}}
+            <h3>{{this.name}}</h3>
+            {{#each this.components}}
+                <h4>{{this.name}}</h4>
+                <div class="l-flex l-flex--direction-column">
+                    {{#each this.colors}}
+                        <h5>{{this}}</h5>
+                        <div class="l-flex l-flex--wrap">
+                            {{#each ../this.sizes}}
+                                <div class="a-mar">
+                                    <h6 class="a-mar">{{this}}</h6>
+                                    {{> (partial (concat ../../../../path "/" ../../../this.name "/" ../../this.name))
+                                            svg=@root.mock.svg
+                                            cta=@root.mock.cta
+                                            modifier=(concat ../../../../base "--" this " " ../../../../base "--" ../this)
+                                    }}
+                                </div>
+                            {{/each}}
+                        </div>
+                    {{/each}}
+                </div>
+            {{/each}}
+        {{/each}}
+    {{/each}}
+</div>
