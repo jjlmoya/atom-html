@@ -1,0 +1,9 @@
+{{#each components.atoms}}
+    <h1>{{this.name}}</h1>
+    {{#each this.components}}
+        {{> (partial (concat @root/components.atoms.path "/" ../this.name "/" this.name))
+                svg=@root.mock.svg
+                cta=@root.mock.cta
+        }}
+    {{/each}}
+{{/each}}
