@@ -1,14 +1,16 @@
 {{> organisms/header/logo-inline}}
 
 
-
 <section class="og-image-articles l-flex l-flex--direction-column--reverse l-grid-column--full">
     {{#each this.mock.products}}
-        <article class="ml-image-article a-mar--minus l-position">
+        <article class="ml-image-article a-mar--minus
+                        a-pad-40
+                        l-position l-flex l-flex--align-end l-flex--justify-center">
             {{> atoms/image/background
                     modifier="a-image--cover"
                     pictureClass=""
                     src=this.image}}
+            {{> atoms/title/link title=this.name modifier="a-text--xl a-text--brand a-text--blur a-text--bold a-text--secondary"}}
         </article>
     {{/each}}
 </section>
