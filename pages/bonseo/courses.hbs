@@ -1,12 +1,4 @@
 {{> organisms/header/logo-inline}}
-
-<h1>Prueba</h1>
-{{#each this.mock.products}}
-    <h2>name: {{this.name}}</h2>
-{{/each}}
-
-<h1>--- Fin prueba</h1>
-
 {{> molecules/breadcrumb/solid
         path=(arr "Inicio, Cursos")
         url=(arr "/bonseo/, /bonseo/cursos/")
@@ -15,7 +7,6 @@
 }}
 
 {{> organisms/block/parallax-action}}
-
 <section class="og-card-road l-flex l-flex--direction-column l-flex--justify-center">
     {{> atoms/title/h2 title="Título" modifier="a-pad a-text  a-text--center a-text--brand"}}
     <div class="l-flex l-flex--justify-center l-flex--wrap">
@@ -27,8 +18,6 @@
         {{/each}}
     </div>
 </section>
-
-
 {{> atoms/image/exposure
         src=images.product
         pictureClass=""
