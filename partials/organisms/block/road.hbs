@@ -1,0 +1,11 @@
+<section class="og-card-road l-flex l-flex--direction-column l-flex--justify-center">
+    {{> atoms/title/h2 title="Título" modifier="a-pad a-text  a-text--center a-text--brand"}}
+    <div class="l-flex l-flex--justify-center l-flex--wrap">
+        {{#each this.mock.products}}
+            {{> molecules/card/road
+                    description=this.description
+                    src=this.image
+                    title=this.name }}
+        {{/each}}
+    </div>
+</section>
