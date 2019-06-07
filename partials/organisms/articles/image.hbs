@@ -1,0 +1,5 @@
+<section class="og-image-articles l-flex l-flex--direction-column--reverse l-grid-column--full {{modifier}}">
+    {{#each this.mock.products}}
+        {{> molecules/article/image modifier="" src=this.image title=this.name}}
+    {{/each}}
+</section>
