@@ -1,0 +1,10 @@
+<section class="og-articles-rainbow {{modifier}}">
+    {{> atoms/title/h3 title="Rainbow Articles" modifier="a-pad a-text--center a-text--xl a-text--bold a-text--brand"}}
+    <div class="l-flex l-flex--justify-center l-flex--wrap">
+        {{#times 3}}
+            {{#each this.mock.products}}
+                {{> molecules/article/rainbow modifier="celeste" src=this.image title=this.name cta="Leer"}}
+            {{/each}}
+        {{/times}}
+    </div>
+</section>
