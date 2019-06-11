@@ -1,0 +1,15 @@
+<div class="l-flex l-flex--direction-row--reverse l-flex--wrap a-pad l-flex--justify-center
+            l-grid-column--full">
+    {{#times 2}}
+        {{#each this.mock.products}}
+            <div class="ml-card-float l-position u-shadow--expanded a-border--smooth a-bg a-pad">
+                {{> atoms/title/h3 title=name modifier="a-text--blur a-text--secondary a-text--bold"}}
+                {{> atoms/paragraph/simple modifier="a-text--blur a-text--secondary" text=description}}
+                {{> atoms/image/background
+                        modifier="a-image--cover a-border--smooth"
+                        pictureClass=""
+                        src=this.image}}
+            </div>
+        {{/each}}
+    {{/times}}
+</div>
