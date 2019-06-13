@@ -1,0 +1,55 @@
+<div class="l-flex l-flex--justify-center a-pad">
+    <svg class="a-svg-meter a-svg-meter--small">
+        <circle class="a-svg-meter__dial a-svg-meter__dial--1" r="96" cx="135" cy="142"></circle>
+        <circle class="a-svg-meter__dial a-svg-meter__dial--2" r="96" cx="135" cy="142"></circle>
+        <circle class="a-svg-meter__dial a-svg-meter__dial--3" r="96" cx="135" cy="142"></circle>
+        <polygon class="a-svg-meter__hand" points="129,140 137,45 145,140"></polygon>
+        <circle class="a-svg-meter__circle" r="8" cx="137" cy="140"></circle>
+        <text font-size="40" x="100" y="62" class="a-svg-meter__number"></text>
+    </svg>
+</div>
+<div class="l-flex l-flex--justify-center a-pad">
+    {{#times 11}}
+        <button class="a-button a-button--secondary a-button--s" onclick="setPercent({{@index}}0)">
+            {{#if @index}}
+                {{@index}}0%
+            {{else}}
+                {{@index}}%
+            {{/if}}
+        </button>
+    {{/times}}
+</div>
+
+<script>
+    function setNumber(percent) {
+        document.querySelector('.a-svg-meter__number').innerHTML = '';
+        var abc = setInterval(function () {
+            var target = document.querySelector('.a-svg-meter__number'),
+                    currentValue = target.innerHTML ? parseInt(target.innerHTML.split('%')[0]) : 0;
+            currentValue++;
+            target.innerHTML = currentValue + "%";
+            if (currentValue >= percent) {
+                clearInterval(abc)
+            }
+        }, 10)
+    }
+
+    function setPercent(percent) {
+        var meter = document.querySelector('.a-svg-meter');
+        meter.classList.remove(
+                'a-deg-0', 'a-shake-0',
+                'a-deg-10', 'a-shake-10',
+                'a-deg-20', 'a-shake-20',
+                'a-deg-30', 'a-shake-30',
+                'a-deg-40', 'a-shake-40',
+                'a-deg-50', 'a-shake-50',
+                'a-deg-60', 'a-shake-60',
+                'a-deg-70', 'a-shake-70',
+                'a-deg-80', 'a-shake-80',
+                'a-deg-90', 'a-shake-90',
+                'a-deg-100', 'a-shake-100',
+        );
+        setNumber(percent);
+        meter.classList.add('a-deg-' + percent, 'a-shake-' + percent)
+    }
+</script>
