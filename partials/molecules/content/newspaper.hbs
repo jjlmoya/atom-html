@@ -1,0 +1,16 @@
+<article class="ml-content-newspaper
+                    l-flex a-mar--top-60 is-reverse">
+    <div class="ml-content-newspaper__image l-column--1-2 a-mar a-mar--minus-40">
+        {{> atoms/image/normal
+                src=this.image
+                pictureClass="u-pointer bs_viewport"
+                modifier="a-image--full u-shadow--bottom a-mi a-mi--zoom a-mi--zoom--in bs_viewport"
+                alt=this.name}}
+        {{> atoms/title/h2 title=this.name modifier="a-text--center a-pad a-text--bold"}}
+    </div>
+    <div class="ml-content-newspaper__content a-pad l-column--1-2">
+        <div class="a-pad">
+            {{> atoms/paragraph/simple text=longDescription modifier="a-text--s" }}
+        </div>
+    </div>
+</article>

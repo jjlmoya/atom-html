@@ -1,8 +1,5 @@
-<div class="l-flex l-flex--direction-column l-flex--justify-center l-flex--align-center"
-           style="width:100vw; height:100vh;">
-    {{> molecules/share/deploy
-            modifier="ml-share-deploy--top"
-            iconModifier="a-svg--brand"
-            id="unique1"
-    }}
+<div class="cake">
+    {{#each this.mock.products}}
+        {{> molecules/content/newspaper}}
+    {{/each}}
 </div>
