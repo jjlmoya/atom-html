@@ -1,9 +1,13 @@
-<section class="l-grid-column--full og-banner-screen og-banner-screen--dark
-                l-flex l-flex--justify-center l-flex--align-center l-flex--direction-column {{modifier}}">
-    {{> atoms/title/h1 title="Let me" size="xl" color="secondary" modifier="a-text--uppercase a-text--bold"}}
+<section class="bs_step og-banner-screen
+                l-grid-column--full l-flex l-flex--align-center l-flex--direction-column
+                a-pad--top-40 {{modifier}}">
     {{> atoms/image/normal
             modifier="l-column--2-3"
-            pictureClass=" a-text--center"
+            pictureClass="a-text--center"
             src=logo
     }}
+    {{> atoms/title/h1 title=title
+            size="xl"
+            color=""
+            modifier="a-text--uppercase a-text--bold a-mar--minus-90"}}
 </section>
