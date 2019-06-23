@@ -1,0 +1,13 @@
+<section class="l-grid-column--full {{modifier}} a-pad--x-40">
+    {{> atoms/image/normal
+            pictureClass=" a-image-logo--content"
+            modifier="a-image-logo--content__image a-mar-auto"
+            src=logo }}
+    {{> atoms/title/h2 modifier="a-text--bold a-text--m" title="Tu viaje en 2 pasos"}}
+    {{> atoms/title/h3 modifier="a-text--secondary" title="Motivo:"}}
+    <div class="l-flex l-flex--justify-center a-pad l-flex--wrap">
+        {{#each this.mock.buttons}}
+            {{> molecules/button/pill modifier=(concat brand " bs_step_filter") tag=this.tag svg=this.svg cta=this.cta}}
+        {{/each}}
+    </div>
+</section>
