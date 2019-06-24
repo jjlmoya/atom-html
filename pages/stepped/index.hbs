@@ -2,17 +2,16 @@
         modifier="bs_step is-active"
         title="En 2 Pasos"
 }}
-
-{{> pages/stepped/first modifier="bs_step" title="En 3 Pasos"}}
-{{> organisms/banner/screen modifier="bs_step" title="En 4 Pasos"}}
-{{> organisms/banner/screen modifier="bs_step" title="En 5 Pasos"}}
+{{> pages/stepped/first modifier="bs_step" title="En 2 Pasos"}}
+{{> pages/stepped/second modifier="bs_step" title="En 2 Pasos"}}
+{{> pages/stepped/third modifier="bs_step" title="gi"}}
 
 {{> atoms/background/splash
         modifier="a-bg--secondary--dark"
         src="https://www.ana-cooljapan.com/img/contents/art/low/cloud.png" }}
 
-<div class="a-pad-40 a-bg--opacity bs_step_offers u-hide">
-    {{> atoms/title/h2 modifier="a-text--bold a-pad--y" title="Las Mejores Ofertas:"}}
+<div class="a-pad-40 bs_step_offers u-hide">
+    {{> atoms/title/h2 modifier="a-text--bold a-pad--y bs_step_title" title="Las Mejores Ofertas:"}}
     <div class="bs_step_content">
 
     </div>
