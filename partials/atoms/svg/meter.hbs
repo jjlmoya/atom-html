@@ -1,5 +1,5 @@
 <div class="l-flex l-flex--justify-center a-pad">
-    <svg class="a-svg-meter a-svg-meter--small">
+    <svg class="a-svg-meter" viewBox="5 15 260 140">
         <circle class="a-svg-meter__dial a-svg-meter__dial--1" r="96" cx="135" cy="142"></circle>
         <circle class="a-svg-meter__dial a-svg-meter__dial--2" r="96" cx="135" cy="142"></circle>
         <circle class="a-svg-meter__dial a-svg-meter__dial--3" r="96" cx="135" cy="142"></circle>
@@ -8,6 +8,8 @@
         <text font-size="40" x="100" y="62" class="a-svg-meter__number"></text>
     </svg>
 </div>
+
+
 <div class="l-flex l-flex--justify-center a-pad">
     {{#times 11}}
         <button class="a-button a-button--secondary a-button--s" onclick="setPercent({{@index}}0)">
