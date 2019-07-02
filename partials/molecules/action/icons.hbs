@@ -1,14 +1,8 @@
 <div class="ml-action-icons {{modifier}} l-flex">
+    {{#each icons}}
         {{> atoms/button/icon
-                svg="atoms/icons/utils/eye"
+                svg=(concat "atoms/icons/utils/" this)
                 modifier="a-button--icon--secondary a-button--icon--border ml-action-icons__button a-mar--x-1"
         }}
-        {{> atoms/button/icon
-                svg="atoms/icons/social/facebook"
-                modifier="a-button--icon--secondary a-button--icon--border ml-action-icons__button a-mar--x-1"
-        }}
-        {{> atoms/button/icon
-                svg="atoms/icons/social/slack"
-                modifier="a-button--icon--secondary a-button--icon--border ml-action-icons__button a-mar--x-1"
-        }}
+    {{/each}}
 </div>
