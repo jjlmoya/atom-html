@@ -1,4 +1,9 @@
-<div class="cake">
+<div class="wood">
+    <div class="og-cards-hover l-flex l-flex--justify-center l-flex--wrap">
+        {{# times 3}}
+            {{> molecules/card/hover}}
+        {{/times}}
+    </div>
     {{#each this.mock.products}}
         {{> molecules/content/newspaper}}
     {{/each}}
