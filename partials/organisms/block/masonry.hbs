@@ -1,0 +1,7 @@
+<div class="og-masonry">
+    {{#times 10}}
+        {{#each this.mock.products}}
+            {{> atoms/image/masonry modifier="og-masonry__item" src=this.image}}
+        {{/each}}
+    {{/times}}
+</div>
