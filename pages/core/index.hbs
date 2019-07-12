@@ -1,4 +1,5 @@
 <div class="wood">
+    <div class="bs_tooltip" data-fixed="true" data-content="Prueba">Click</div>
     {{> organisms/block/masonry}}
     <div class="og-cards-hover l-flex l-flex--justify-center l-flex--wrap">
         {{# times 3}}
@@ -8,4 +9,8 @@
     {{#each this.mock.products}}
         {{> molecules/content/newspaper}}
     {{/each}}
+</div>
+
+<div id="bs_tooltip_theme l-position--fixed">
+
 </div>
