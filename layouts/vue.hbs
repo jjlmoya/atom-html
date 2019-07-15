@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="title" content="{{name}}">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <title>{{name}}</title>
-
+    <title>{{name}}ABC</title>
 </head>
 <body class="{{brand}} l-grid-column">
+<script>
+    (function () {
+        console.log (e);
+        var e = document.querySelector('.bs_splash_screen');
+        if (e) {
+            document.body.style['overflow'] = 'hidden';
+        }
+    })
+</script>
 {{{body}}}
 <script type="text/javascript" src="/js/components.min.js"></script>
 

@@ -1,5 +1,11 @@
-<div class="wood">
 
+
+{{> organisms/banner/screen
+       modifier="bs_splash_screen a-splash a-splash--fade u-layer-5 a-bg--light"
+        title="En 2 Pasos"
+}}
+
+<div class="wood">
     {{> organisms/block/masonry}}
     <div class="og-cards-hover l-flex l-flex--justify-center l-flex--wrap">
         {{# times 3}}
@@ -9,7 +15,8 @@
     <div class="bs_tooltip"
          data-mode="hover"
          data-template="full"
-         data-content="Prueba de un tooltip superlargo, Prueba de un tooltip superlargo.">Click</div>
+         data-content="Prueba de un tooltip superlargo, Prueba de un tooltip superlargo.">Click
+    </div>
     {{#each this.mock.products}}
         {{> molecules/content/newspaper}}
     {{/each}}
