@@ -1,22 +1,27 @@
-{{> organisms/banner/screen
-        modifier="bs_step is-active"
-        title="En 2 Pasos"
-}}
-{{> pages/stepped/first modifier="bs_step" title="En 2 Pasos"}}
-{{> pages/stepped/second modifier="bs_step" title="En 2 Pasos"}}
-{{> pages/stepped/third modifier="bs_step" title="En 2 Pasos"}}
+<div class="">
+    {{> organisms/banner/screen
+            modifier="bs_step is-active u-layer-5"
+            title="En 2 Pasos"
+    }}
+    {{> atoms/background/splash
+            modifier="a-bg--gradient--light u-layer-minus"}}
 
-{{> atoms/background/splash
-        modifier="a-bg--secondary--dark"
-        src="https://www.ana-cooljapan.com/img/contents/art/low/cloud.png" }}
-
-<div class="a-pad-40 bs_step_offers u-hide">
-    {{> atoms/title/h2 modifier="a-text--bold a-pad--y bs_step_title" title="Las Mejores Ofertas:"}}
-    <div class="bs_step_content">
+    {{> pages/stepped/first modifier="bs_step" title="En 2 Pasos"}}
+    {{> pages/stepped/second modifier="bs_step" title="En 2 Pasos"}}
+    {{> pages/stepped/third modifier="bs_step" title="En 2 Pasos"}}
+    <div class="l-flex l-flex--direction-row">
+        <div class="og-filter-linear bs_step_category bs_step_subcategory
+                    l-flex l-flex--justify-start l-flex--direction-column l-flex--wrap
+                    a-pad"></div>
+        <div class="a-pad-40 bs_step_offers u-hide">
+            {{> atoms/title/h2 modifier="a-text--bold a-pad--y bs_step_title" title=""}}
+            <div class="bs_step_content"></div>
+        </div>
 
     </div>
-</div>
 
-<div class="bs_step_progress
+    <div class="bs_step_progress
             l-position--fixed l-position--fixed--bottom l-column--1-1
             a-bg--opacity"></div>
+</div>
+
