@@ -1,5 +1,30 @@
 <!--{{> organisms/articles/avatar  modifier=""}}-->
 <div class="p-default p-wordpress l-grid-column">
+    <button class="a close">a</button>
+    <button class="b close">b</button>
+    <button class="c close">c</button>
+    <div class="wrapper">
+        <div class="bs_state ca"
+             data-close=".close"
+             data-active=".a">
+            ca
+        </div>
+        <div class="bs_state cb"
+             data-close=".close"
+             data-active=".b">
+            cb
+        </div>
+        <div class="bs_state cc"
+             data-close=".close"
+             data-active=".c">
+            cc
+        </div>
+    </div>
+    <style>
+        .ca.is-active, .cb.is-active, .cc.is-active{
+            background-color: red;
+        }
+    </style>
     <p><strong>Headings</strong></p>
     <h1>Header one</h1>
     <h2>Header two</h2>
