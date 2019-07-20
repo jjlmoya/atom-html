@@ -4,7 +4,7 @@
     <button class="b close">b</button>
     <button class="c close">c</button>
     <div class="wrapper">
-        <div class="bs_state ca"
+        <div class="bs_state ca is-active"
              data-close=".close"
              data-active=".a">
             ca
@@ -21,9 +21,13 @@
         </div>
     </div>
     <style>
-        .ca.is-active, .cb.is-active, .cc.is-active{
-            background-color: red;
+        .ca,.cb,.cc{
+            display:none;
         }
+        .ca.is-active, .cb.is-active, .cc.is-active{
+            display:block
+        }
+
     </style>
     <p><strong>Headings</strong></p>
     <h1>Header one</h1>
