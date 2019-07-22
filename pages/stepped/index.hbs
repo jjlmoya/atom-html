@@ -6,19 +6,15 @@
     {{> atoms/background/splash
             modifier="a-bg--gradient--light u-layer-minus"}}
 
-    {{> pages/stepped/first modifier="bs_step" title="En 2 Pasos"}}
-    {{> pages/stepped/second modifier="bs_step" title="En 2 Pasos"}}
-    {{> pages/stepped/third modifier="bs_step" title="En 2 Pasos"}}
-    <div class="l-flex l-flex--direction-row">
-        <div class="og-filter-linear bs_step_category bs_step_subcategory
-                    l-flex l-flex--justify-start l-flex--direction-column l-flex--wrap
-                    a-pad"></div>
-        <div class="a-pad-40 bs_step_offers u-hide">
-            {{> atoms/title/h2 modifier="a-text--bold a-pad--y bs_step_title" title=""}}
-            <div class="bs_step_content"></div>
-        </div>
-
+    {{> pages/stepped/first modifier="bs_step"}}
+    <div class="og-filter-linear bs_step_categories l-flex l-flex--wrap"></div>
+    <div class="og-filter-linear bs_step_subcategories l-flex l-flex--wrap"></div>
+    <div class="og-filter-linear bs_step_filters l-flex l-flex--wrap"></div>
+    <div class="a-pad-40 bs_step_offers u-hide">
+        {{> atoms/title/h2 modifier="a-text--bold a-pad--y bs_step_title" title=""}}
+        <div class="bs_step_content"></div>
     </div>
+
 
     <div class="bs_step_progress
             l-position--fixed l-position--fixed--bottom l-column--1-1
