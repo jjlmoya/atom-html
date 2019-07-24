@@ -1,14 +1,7 @@
 <div class="og-slider--simple
             l-grid-column--full
             l-flex l-flex--align-center l-flex--justify-center
-            l-position bs_slider {{modifier}}">
-    {{> molecules/slider/arrow
-            direction="left"
-            modifier="ml-arrow--full l-flex l-flex--align-center l-flex--justify-center"}}
-    {{> molecules/slider/arrow
-            direction="right"
-            modifier="ml-arrow--full
-                      l-flex l-flex--align-center l-flex--justify-center"}}
+            l-position bs_slider {{modifier}}" data-arrow=".bs_slider_arrow">
     <div class="og-slider--simple__content bs_slider_content">
         {{> molecules/slider/content id="1" modifier="bs_slide"}}
         {{> molecules/slider/content id="2" modifier="bs_slide"}}
@@ -20,5 +13,12 @@
             modifier="l-position--absolute l-position--absolute--bottom og-slider--simple__buttons a-pad"
             modifierIcon="bs_slider_button"
     }}
+    {{> molecules/slider/arrow
+            direction="left"
+            modifier="bs_slider_arrow ml-arrow--full l-flex l-flex--align-center l-flex--justify-center"}}
+    {{> molecules/slider/arrow
+            direction="right"
+            modifier="bs_slider_arrow ml-arrow--full
+                      l-flex l-flex--align-center l-flex--justify-center"}}
 </div>
 
