@@ -2,12 +2,12 @@
     a-bg--mono-0
     l-flex l-grid-column--full
     u-layer-5 u-shadow--bottom l-position
-    {{modifier}}">
+    bs_viewport {{modifier}}">
     <a href="/bonseo">
         {{> atoms/image/normal
                 pictureClass="l-column--1-1 l-position--absolute"
-                modifier="l-position--absolute l-position--absolute--center-x
-                         og-logo-inline__image  a-mi-zoom a-mi-zoom--in a-mi-zoom--slow bs_viewport"
+                modifier="l-position--absolutel-position--absolute--center-x
+                         og-logo-inline__image a-mi-zoom a-mi-zoom--in a-mi-zoom--slow bs_viewport a-mar-auto"
                 src=logo}}
     </a>
     <nav class="og-logo-inline__navigation og-logo-inline__navigation--left l-flex l-flex-item--align-center l-column--1-1 l-flex--justify-end">
@@ -21,4 +21,24 @@
         <a href="/bonseo/cursos"
            class="a-text a-text--link a-text--capitalize og-logo-inline__navigation__link">Cursos</a>
     </nav>
+    <div class="og-logo-inline__mobile__menu a-svg a-svg--secondary l-position--absolute l-position--absolute--center-x">
+        {{> atoms/icons/utils/menu}}
+    </div>
 </header>
+<nav class="og-menu-classic bs_state a-pad l-position a-bg--gradient--light u-layer-4"
+     data-close=".og-menu-classic__close, .bs_overflow_layer"
+     data-block="true"
+     data-active=".og-logo-inline__mobile__menu">
+    <div class="og-menu-classic__close a-text--secondary">
+        X
+    </div>
+    <nav class="og-menu-classic__navigation
+                a-mar--top-40
+                l-flex l-flex--direction-column l-flex--align-center a-pad">
+        {{#times 10}}
+            <a class="og-menu-classic__element
+             a-text a-text--secondary a-text--link a-text--link--secondary
+            a-pad--bottom" href="#"> Enlace {{@index}}</a>
+        {{/times}}
+    </nav>
+</nav>
