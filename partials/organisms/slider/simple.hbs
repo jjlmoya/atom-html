@@ -8,13 +8,14 @@
      data-button=".og-slider--simple__button"
      data-arrow=".bs_slider_arrow">
     <div class="og-slider--simple__content bs_slider_content">
-        {{#times 400}}
-        {{> molecules/slider/content id=@index modifier="bs_slide"}}
+        {{#times 100}}
+        {{> molecules/slider/content/basic id=@index modifier="bs_slide"}}
         {{/times}}
     </div>
     {{> molecules/slider/buttons
             modifier="l-position--absolute l-position--absolute--bottom og-slider--simple__buttons a-pad "
             modifierIcon="og-slider--simple__button"
+            buttonLength=100
     }}
     {{> molecules/slider/arrow
             direction="left"

@@ -1,7 +1,5 @@
-<div class="ml-slider-buttons l-flex {{modifier}}">
-    {{> atoms/button/slider modifier="a-button--slider--pill" modifier=modifierIcon href="1" }}
-    {{> atoms/button/slider modifier="a-button--slider--pill" modifier=modifierIcon href="2" }}
-    {{> atoms/button/slider modifier="a-button--slider--pill" modifier=modifierIcon href="3" }}
-    {{> atoms/button/slider modifier="a-button--slider--pill" modifier=modifierIcon href="4" }}
-    {{> atoms/button/slider modifier="a-button--slider--pill" modifier=modifierIcon href="5" }}
+<div class="ml-slider-buttons l-flex l-flex--wrap {{modifier}}">
+    {{#times buttonLength}}
+        {{> atoms/button/slider modifier="a-button--slider--pill" modifier=modifierIcon href=@index}}
+    {{/times}}
 </div>
