@@ -1,0 +1,30 @@
+<div class="og-slider--movie
+            l-grid-column--full
+            l-flex l-flex--align-start l-flex--justify-start
+            l-position bs_slider {{modifier}}"
+     data-autoplay="1000000"
+     data-content=".bs_slider_content"
+     data-slide=".bs_slide"
+     data-replay="true"
+     data-button=".og-slider--movie__button"
+     data-arrow=".bs_slider_arrow">
+    <div class="og-slider--movie__content l-position bs_slider_content">
+        {{> molecules/slider/content/inspirational id="3" modifier="og-slider--movie__slide bs_slide"}}
+        {{> molecules/slider/content/basic id="1" modifier="og-slider--movie__slide bs_slide"}}
+        {{> molecules/slider/content/inspirational id="2" modifier="og-slider--movie__slide bs_slide"}}
+    </div>
+    <div class="og-slider--movie__nav">
+        {{> molecules/slider/buttons/titles
+                modifier="og-slider--movie__buttons"
+                modifierButton="og-slider--movie__button"
+                buttonLength=3
+        }}
+    </div>
+    {{> molecules/slider/arrow
+            direction="left"
+            modifier="bs_slider_arrow ml-arrow--full l-flex l-flex--align-center l-flex--justify-center"}}
+    {{> molecules/slider/arrow
+            direction="right"
+            modifier="bs_slider_arrow ml-arrow--full
+                      l-flex l-flex--align-center l-flex--justify-center"}}
+</div>

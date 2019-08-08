@@ -1,5 +1,11 @@
 <div class="ml-slider-buttons l-flex l-flex--direction-column l-flex--justify-center l-flex--align-center {{modifier}}">
     {{#times buttonLength}}
-        <h2 class="a-button--slider--title {{modifierButton}} l-column--1-1 a-text a-text--center">Title {{@index}}</h2>
+        <div class="a-button--slider a-button--slider--title l-column--1-1 {{modifierButton}}">
+            <h2 class="a-button--slider--title__caption">Title {{@index}}</h2>
+            <div class="a-button--slider--title__description">
+                Una de las <strong>pequeñas descripciones</strong> que hacen que un slider sea una mejor pieza de diseño.
+                Con una pequeña y tranquilizadora animación.
+            </div>
+        </div>
     {{/times}}
 </div>
